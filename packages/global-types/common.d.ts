@@ -1,15 +1,14 @@
-export const DEVELOPMENT = "development";
-
-export enum COOKIES_KEY {
-  USER_TOKEN = "__token",
-  REFRESH_TOKEN = "__refresh_token",
-  IP = "__ip",
-  COUNTRY = "__country",
-  CURRENCY = "__currency",
-  IS_REDIRECT = "__is_redirect",
-  LANG = "__language",
-  LOCATION = "__location",
-  GA_CLIENT_ID = "_ga",
-  MAKE_PAYMENT_TOKEN = "make_payment_id",
-  ORDER_PAYMENT_TOKEN = "order_payment_id",
+export type Banner = {
+  banner_id: number
+  banner_title: string
+  banner_subtitle: string
+  banner_content: string
+  banner_link: string
+  banner_image: string
+  banner_image_mobile: string
+  banner_start_time: number
+  banner_end_time: number
+  banner_link_replace: string
+  banner_content_replace: string
+  banner_sub_image: string
 }
