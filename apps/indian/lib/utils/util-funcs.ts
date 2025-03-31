@@ -9,6 +9,7 @@ import {
 } from '@constants/env'
 import { MetadataParams } from '@repo/global-types/common.d'
 import { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 
 export const useFetch = async (
   endpoint: string,
@@ -121,4 +122,12 @@ export async function useGenerateMetadata({
       canonical: currentUrl
     }
   }
+}
+
+export const useNotFound = () => {
+  if (process.env.NODE_ENV === DEVELOPMENT) {
+    notFound()
+  }
+
+  throw notFound()
 }

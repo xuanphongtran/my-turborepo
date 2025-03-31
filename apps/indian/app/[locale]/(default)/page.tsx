@@ -1,3 +1,7 @@
+import commonService from '@lib/api/services/common.service'
+import { useNotFound } from '@lib/utils/util-funcs'
+import { useQueryParams } from 'middleware'
+
 export const generateMetadata = async ({ params }: { params: { locale: string } }) => {
   const [lang, location] = useQueryParams(params.locale)
 

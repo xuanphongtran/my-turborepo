@@ -5,6 +5,7 @@ import { Roboto } from 'next/font/google'
 import { headers } from 'next/headers'
 import Providers from '../components/hoc/Provider'
 import BaseComponent from '../components/BaseComponent'
+import NextTopLoaderClient from '@components/NextTopLoaderClient'
 
 type Props = { children: React.ReactNode; params: { locale: string } }
 
@@ -37,6 +38,7 @@ export default async function RootLayout({ children }: Props) {
   return (
     <html lang='en' className={roboto.className}>
       <body>
+        <NextTopLoaderClient />
         <BaseComponent />
         <Providers>{children}</Providers>
       </body>

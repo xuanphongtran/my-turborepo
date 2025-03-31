@@ -1,3 +1,4 @@
+import { Banner } from './common'
 export type Article = {
   ar_id: number
   ar_type: ArticleType
@@ -47,7 +48,6 @@ export type ArticleQueryParams = {
   is_home?: boolean
   token?: string
   limit_articles?: number
-  [key: string]: string | number | boolean
 }
 
 export type ArticleDetailQueryParams = {
@@ -57,7 +57,6 @@ export type ArticleDetailQueryParams = {
   limit_related?: number
   preview?: string
   token?: string
-  [key: string]: string | number | boolean
 }
 
 export type ArticleMetaType = {

@@ -1,3 +1,5 @@
+import { ArticleDetailQueryParams, ArticleQueryParams } from '../../global-types/article'
+
 export const formatQueryParams = (queryParams: ArticleQueryParams | ArticleDetailQueryParams): string => {
   const params: string[] = []
 
