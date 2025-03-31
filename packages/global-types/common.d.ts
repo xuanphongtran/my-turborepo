@@ -12,3 +12,15 @@ export type Banner = {
   banner_content_replace: string
   banner_sub_image: string
 }
+
+export interface MetadataParams {
+  title: string
+  page_meta_description: string
+  page_meta_keyword: string
+  page_meta_image: string
+  current_url: string
+  locale?: string
+  lang: string
+  location: string
+  page_name: string
+}
